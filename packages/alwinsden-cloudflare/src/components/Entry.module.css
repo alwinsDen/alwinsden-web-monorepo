@@ -1,0 +1,41 @@
+body {
+  background-color: #F3DB00;
+}
+
+
+.web-container {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3DB00;
+
+  img {
+    width: 100dvw;
+  }
+}
+
+p {
+  font-family: "EB Garamond", serif;
+}
+
+.web-header {
+  font-size: clamp(1rem, 20vw, 16rem);
+  line-height: clamp(1rem, 20vw, 16rem);
+}
+
+span {
+  font-family: "Jacquard 24", system-ui;
+}
+
+@media screen and (min-width: 1000px){
+  .web-container {
+    flex-direction: row;
+
+    img {
+      width: 400px;
+    }
+  }
+}
