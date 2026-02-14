@@ -12,6 +12,7 @@ const SynapseUI = () => {
           marginTop: '10px',
           width: '605px',
         }}
+        className={style.synapse_header}
       >
         <div>
           <h1>Project Synapse</h1>
@@ -19,9 +20,12 @@ const SynapseUI = () => {
           <p>
             Project Synpase is an experimental UI test for Compose Multplatform, which is a subset
             of Kotlin Multiplatform. This current setup includes:
-            <br></br>* ComposeApp for Android and iOS using a singular UI code.
-            <br></br>* Ktor framework for setting up authentication & integration of Claude APIs.
           </p>
+          <br />
+          <ul>
+            <li>ComposeApp for Android and iOS using a singular UI code.</li>
+            <li>Ktor framework for setting up authentication & integration of Claude APIs.</li>
+          </ul>
         </div>
         <div
           style={{
@@ -29,7 +33,7 @@ const SynapseUI = () => {
             paddingLeft: '15px',
           }}
         >
-          <img src={IntroImage1} width={300} className={style.imageRadius} />
+          <img src={IntroImage1} width={200} className={style.imageRadius} />
         </div>
       </div>
     </AlwinsDenRepeat>

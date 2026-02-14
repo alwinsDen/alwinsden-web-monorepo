@@ -6,6 +6,11 @@ body {
     border-radius: 10px;
 }
 
-div > p {
-    font-family: 'Inter';
+.synapse_header {
+    p {
+        font-family: 'Inter';
+    }
+    li {
+        font-family: 'Inter';
+    }
 }
