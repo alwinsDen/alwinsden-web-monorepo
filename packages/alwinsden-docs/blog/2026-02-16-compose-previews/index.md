@@ -2,7 +2,7 @@
 slug: compose-previews
 title: Compose Previews - A Relaxed Development.
 authors: [Alwin]
-tags: [kotlin, android, jetpack compose]
+tags: [kotlin, android, jetpack compose, synapse]
 description: Article No. 2 of the KMP series.
 image: ./Undestand-kotlin-compose.png
 draft: false

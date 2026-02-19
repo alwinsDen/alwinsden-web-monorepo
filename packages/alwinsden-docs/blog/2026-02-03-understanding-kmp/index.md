@@ -2,7 +2,7 @@
 slug: kmp-gauth-multiplatform
 title: The KMP Way - GAuth for Android
 authors: [Alwin]
-tags: [kotlin, mutiplatform, android]
+tags: [kotlin, mutiplatform, android, synapse]
 image: ./Undestand-kotlin-compose.png
 description: Article No. 1 of the KMP series.
 ---
