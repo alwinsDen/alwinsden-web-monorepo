@@ -4,7 +4,7 @@ title: Compose Previews - A Relaxed Development.
 authors: [Alwin]
 tags: [kotlin, android, jetpack compose]
 description: Article No. 2 of the KMP series.
-draft: true
+draft: false
 ---
 
 :::info
@@ -52,3 +52,7 @@ What about **Previews**?
 ![Synapse preview time preview](./preview_time.gif)
 
 Bamm! Instant because preview compilation doesn't care about the rest other than the element at hand.
+
+### UI Edge Cases and States
+
+For this let's use simple test element. Synapse uses a bottom sheet [here](https://github.com/alwinsDen/synapse-ai/blob/master/composeApp/src/commonMain/kotlin/com/alwinsden/dino/botInterface/components/BotTextField.kt#L149) to cycle between selected models.
