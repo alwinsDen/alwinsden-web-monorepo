@@ -2,9 +2,9 @@ import styles from './alwint.module.css';
 import { AlwinsDenRepeat } from '../../components/articleBackgrounds/alwinsDenRepeat';
 import alwinsdenIcon from '../../../public/alwinsden-icon.svg';
 import AlwinProfile from '../../assets/profiles/alwin.png';
-import CombinedIcons from '../../assets/logos/combined-logos.png';
+import PastWorkExp from '../../assets/logos/past_work_exp.png';
 import Pluribus from '../../assets/backgrounds/pluribus.png';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, Paperclip } from 'lucide-react';
 import type { ISocials } from '../../commons/commonsTypes';
 const AlwinT = () => {
   const socials: ISocials[] = [
@@ -119,12 +119,12 @@ const AlwinT = () => {
             gap: '6px',
           }}
         >
-          <p style={{ fontSize: '18px' }}>Tried these:</p>
+          <p style={{ fontSize: '18px' }}>Worked here:</p>
           <img
-            src={CombinedIcons}
+            src={PastWorkExp}
             style={{
               height: 'auto',
-              maxHeight: '60px',
+              maxHeight: '150px',
               width: 'auto',
               alignSelf: 'flex-start',
             }}
@@ -132,7 +132,6 @@ const AlwinT = () => {
         </div>
         <div
           style={{
-            marginTop: '24px',
             display: 'flex',
             flexDirection: 'column',
             gap: '6px',
@@ -174,6 +173,20 @@ const AlwinT = () => {
             >
               <Mail size={19} style={{ marginRight: '5px' }} /> <p>alwintv5018@gmail.com</p>
             </a>
+            <p>|</p>
+            <a
+              href="https://docs.google.com/document/d/18-InUdMvHTLVdKnGyktMP7KBVL0yQTubRfik0VyOIMI/edit?usp=sharing"
+              style={{
+                fontSize: '18px',
+                color: 'blue',
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              target="_blank"
+            >
+              <Paperclip size={19} style={{ marginRight: '5px' }} />
+              <p>resume</p>
+            </a>
           </div>
         </div>
         <div
@@ -185,6 +198,13 @@ const AlwinT = () => {
           }}
         >
           <p style={{ fontSize: '18px' }}>Some things I wrote & demos:</p>
+          <a
+            href="https://docs.alwinsden.com/articles/compose-previews"
+            style={{ fontSize: '18px' }}
+            target="_blank"
+          >
+            * Compose Previews - A Relaxed Development.
+          </a>
           <a
             href="https://docs.alwinsden.com/articles/kmp-gauth-multiplatform"
             style={{ fontSize: '18px' }}
