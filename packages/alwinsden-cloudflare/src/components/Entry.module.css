@@ -8,6 +8,7 @@
 /* ── NAVBAR ── */
 .navbar {
   background: #ffffff;
+  border-bottom: 1px solid #000;
 }
 
 .navbar-inner {
@@ -70,7 +71,7 @@
   margin: 0 auto;
   padding-left: 70px;
   display: flex;
-  height: 854px;
+  max-height: 854px;
   padding-top: 70px;
 }
 
@@ -130,10 +131,10 @@
 
 .hero-icon {
   img {
-    width: clamp(200px, 30vw, 380px);
+    max-width: clamp(200px, 30vw, 380px);
     height: auto;
     display: block;
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -268,9 +269,47 @@
 
   .hero-inner {
     padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   
   .footer-inner {
     padding: 30px;
+    flex-direction: column;
+  }
+
+  .hero-headline {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    padding-right: 30px;
+  }
+
+  .hero-subtext {
+    flex-direction: column;
+  }
+  
+  .hero-icon {
+    height: 250px;
+    img {
+      width: 100vw;
+      padding: 0;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .footer-logo {
+    font-size: 2rem;
+  }
+
+  .footer-inner {
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    font-size: 1rem;
   }
 }

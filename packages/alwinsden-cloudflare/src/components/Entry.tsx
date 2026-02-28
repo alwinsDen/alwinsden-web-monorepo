@@ -66,9 +66,9 @@ const Entry = () => {
             <div className={style['hero-subtext']}>
               <div className={style['hero-explore']}>
                 <p className={style['hero-subtitle']}>
-                  We spark curiosity in people about science, humanity and our future on the planet
-                  – and the universe we all inhabit. We are fascinated by the world that surrounds
-                  us and want to spread our enthusiasm through our work.
+                  We ignite wonder in developers about interfaces, logic and our future on the web –
+                  and the digital realms we all build. We are fascinated by the code that connects
+                  us and want to share our passion through our craft.
                 </p>
                 <a href="/alwin" className={style['cta-button']}>
                   Explore my work →
