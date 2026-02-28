@@ -7,7 +7,7 @@ const navLinks = [
   { label: 'WHO AM I?', href: '/alwin' },
   { label: 'ARTICLES', href: 'https://docs.alwinsden.com/' },
   { label: 'GITHUB', href: 'https://github.com/alwinsden' },
-  { label: 'OPEN SOURCE PRODUCTS', href: '#products' },
+  { label: 'OPEN SOURCE', href: '#products' },
 ];
 
 const Entry = () => {
