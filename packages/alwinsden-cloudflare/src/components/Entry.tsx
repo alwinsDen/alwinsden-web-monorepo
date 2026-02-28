@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import style from './Entry.module.css';
 import alwinsdenIcon from '../../public/alwinsden-icon.svg';
 
@@ -9,6 +11,8 @@ const navLinks = [
 ];
 
 const Entry = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className={style.page}>
       <nav className={style.navbar}>
@@ -23,8 +27,37 @@ const Entry = () => {
               </a>
             ))}
           </div>
+          <button className={style.hamburger} onClick={() => setMobileMenuOpen(true)}>
+            <Menu size={26} strokeWidth={1.5} />
+          </button>
         </div>
       </nav>
+
+      {mobileMenuOpen && (
+        <div className={style['mobile-menu']}>
+          <div className={style['mobile-menu-header']}>
+            <span className={style['mobile-menu-logo']}>
+              alw<i className={style['inner-i']}>1</i>nsDen.com
+            </span>
+            <button className={style['mobile-menu-close']} onClick={() => setMobileMenuOpen(false)}>
+              <X size={26} strokeWidth={1.5} />
+            </button>
+          </div>
+          <div className={style['mobile-menu-links']}>
+            {navLinks.map(link => (
+              <a
+                key={link.label}
+                href={link.href}
+                className={style['mobile-menu-link']}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span>{link.label}</span>
+                <ArrowRight size={20} strokeWidth={1.5} />
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       <section className={style.hero}>
         <div className={style['hero-inner']}>

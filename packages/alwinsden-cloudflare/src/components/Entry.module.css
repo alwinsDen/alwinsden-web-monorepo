@@ -179,3 +179,98 @@
     text-underline-offset: 6px;
   }
 }
+
+/* ── HAMBURGER (hidden on desktop) ── */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+  color: #000;
+}
+
+/* ── MOBILE MENU OVERLAY ── */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mobile-menu-logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.mobile-menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #000;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* ── MOBILE (< 500px) ── */
+@media screen and (max-width: 499px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    border-right: 0px solid red;
+    padding-right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-inner {
+    padding: 30px;
+  }
+
+  .hero-inner {
+    padding-left: 30px;
+  }
+  
+  .footer-inner {
+    padding: 30px;
+  }
+}
