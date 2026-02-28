@@ -36,7 +36,7 @@ const Entry = () => {
       {mobileMenuOpen && (
         <div className={style['mobile-menu']}>
           <div className={style['mobile-menu-header']}>
-            <span className={style['mobile-menu-logo']}>
+            <span className={style['logo']}>
               alw<i className={style['inner-i']}>1</i>nsDen.com
             </span>
             <button className={style['mobile-menu-close']} onClick={() => setMobileMenuOpen(false)}>

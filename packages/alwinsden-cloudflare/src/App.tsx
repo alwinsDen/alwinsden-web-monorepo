@@ -5,7 +5,7 @@ function App() {
   useEffect(() => {
     const updateZoom = () => {
       const vw = window.innerWidth;
-      if (vw >= 500 && vw < 1440) {
+      if (vw >= 770 && vw < 1440) {
         document.documentElement.style.zoom = String(vw / 1440);
       } else {
         document.documentElement.style.zoom = '';
