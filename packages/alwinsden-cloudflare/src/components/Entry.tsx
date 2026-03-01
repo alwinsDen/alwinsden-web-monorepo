@@ -63,16 +63,18 @@ const Entry = () => {
         <div className={style['hero-inner']}>
           <div className={style['hero-content']}>
             <h1 className={style['hero-headline']}>
-              <span style={{ whiteSpace: 'nowrap' }}>Better frontend,</span>
+              <span style={{ whiteSpace: 'nowrap' }}>
+                <span className={style['special-span']}>Better</span> frontend,
+              </span>
               <br />
               for the AI age.
             </h1>
             <div className={style['hero-subtext']}>
               <div className={style['hero-explore']}>
                 <p className={style['hero-subtitle']}>
-                  We ignite wonder in developers about interfaces, logic and our future on the web –
-                  and the digital realms we all build. We are fascinated by the code that connects
-                  us and want to share our passion through our craft.
+                  Frontend engineering is rapidly evolving in pace with changing AI frontier. LLMs
+                  have become a daily driver for automating mindless typing, while aiding in
+                  mindfully focusing on the long-term product architecture.
                 </p>
                 <a href="/alwin" className={style['cta-button']}>
                   Explore my work →

@@ -92,6 +92,11 @@
   
 }
 
+.special-span {
+  text-underline-offset: 20px;
+  text-decoration: underline;
+}
+
 .hero-subtext {
   display: flex;
   margin-top: 36px;
@@ -321,5 +326,9 @@
 
   .footer {
     padding: 10px 0;
+  }
+
+  .special-span {
+    text-underline-offset: 5px;
   }
 }
