@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import style from './Entry.module.css';
 import MainHero from '../pages/mainHero/mainHero';
@@ -10,16 +10,34 @@ const navLinks = [
   { label: 'OPEN SOURCE', href: '#products' },
 ];
 
-const Entry = ({ children }: { children: React.ReactNode }) => {
+const Entry = ({
+  children,
+  backgroundColor,
+}: {
+  children: React.ReactNode;
+  backgroundColor?: string;
+}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  useEffect(() => {
+    const updateZoom = () => {
+      const vw = window.innerWidth;
+      if (vw >= 770 && vw < 1440) {
+        document.documentElement.style.zoom = String(vw / 1440);
+      } else {
+        document.documentElement.style.zoom = '';
+      }
+    };
+    updateZoom();
+    window.addEventListener('resize', updateZoom);
+    return () => window.removeEventListener('resize', updateZoom);
+  }, []);
   return (
     <div className={style.page}>
       <nav className={style.navbar}>
         <div className={style['navbar-inner']}>
-          <span className={style.logo}>
+          <a href="/" className={style.logo}>
             alw<i className={style['inner-i']}>1</i>nsDen.com
-          </span>
+          </a>
           <div className={style['nav-links']}>
             {navLinks.map(link => (
               <a key={link.label} href={link.href} className={style['nav-link']}>
@@ -36,9 +54,9 @@ const Entry = ({ children }: { children: React.ReactNode }) => {
       {mobileMenuOpen && (
         <div className={style['mobile-menu']}>
           <div className={style['mobile-menu-header']}>
-            <span className={style['logo']}>
+            <a href="/" className={style['logo']}>
               alw<i className={style['inner-i']}>1</i>nsDen.com
-            </span>
+            </a>
             <button className={style['mobile-menu-close']} onClick={() => setMobileMenuOpen(false)}>
               <X size={26} strokeWidth={1.5} />
             </button>
@@ -59,7 +77,14 @@ const Entry = ({ children }: { children: React.ReactNode }) => {
         </div>
       )}
 
-      <div className={style['hero-container']}>{children}</div>
+      <div
+        className={style['hero-container']}
+        style={{
+          background: backgroundColor ?? '#fee227',
+        }}
+      >
+        {children}
+      </div>
 
       <footer className={style.footer}>
         <div className={style['footer-inner']}>

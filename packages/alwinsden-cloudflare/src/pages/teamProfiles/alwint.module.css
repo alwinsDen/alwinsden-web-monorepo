@@ -1,3 +1,141 @@
 .alwin-entry {
-  width: 605px;
+  background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-row {
+  display: flex;
+  gap: 20px;
+}
+
+.header-first-half {
+  width: 50%;
+}
+
+.bio-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.profile-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-image {
+  border: 1px solid #000;
+}
+
+.profile-caption {
+  font-size: 16px;
+  text-align: left;
+}
+
+.section {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.marquee-icon {
+  height: 60px;
+  width: auto;
+  margin-right: 60px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.handle-text {
+  font-size: 16px;
+}
+
+.handle-name {
+  font-family: 'EB Garamond', serif;
+  text-decoration: underline;
+}
+
+.handle-on {
+  font-weight: 600;
+  font-family: 'EB Garamond', serif;
+  margin-right: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.email-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.resume-link {
+  font-size: 16px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.article-link {
+  font-size: 16px;
+}
+
+.nav-footer {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+  font-size: 16px;
+}
+
+/* ── MOBILE (< 500px) ── */
+@media screen and (max-width: 770px) {
+  .alwin-entry {
+    padding: 30px;
+  }
+
+  .header-row {
+    flex-direction: column-reverse;
+  }
+
+  .header-first-half {
+    width: 100%;
+  }
 }
