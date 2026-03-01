@@ -24,7 +24,7 @@ const AlwinT = () => {
           </p>
 
           <div className={styles.section}>
-            <p className={styles['section-label']}>Worked here:</p>
+            <p className={styles['section-label']}>WORKED HERE:</p>
             <Marquee speed={200} gradient={false}>
               {[Work_Icon_1, Work_Icon_2, Work_Icon_3, Work_Icon_4].map((icon, i) => (
                 <img key={i} src={icon} className={styles['marquee-icon']} />
@@ -33,39 +33,39 @@ const AlwinT = () => {
           </div>
 
           <div className={styles.section}>
-            <p className={styles['section-label']}>Some things I wrote & demos:</p>
+            <p className={styles['section-label']}>SOME THINGS I WROTE AND DEMOS:</p>
             <a
               href="https://docs.alwinsden.com/articles/compose-previews"
               className={styles['article-link']}
               target="_blank"
             >
-              * Compose Previews - A Relaxed Development.
+              Compose Previews - A Relaxed Development.
             </a>
             <a
               href="https://docs.alwinsden.com/articles/kmp-gauth-multiplatform"
               className={styles['article-link']}
               target="_blank"
             >
-              * The KMP Way - GAuth for Android
+              The KMP Way - GAuth for Android
             </a>
             <a
               href="https://youtu.be/dNnB43yC0T0"
               className={styles['article-link']}
               target="_blank"
             >
-              * XR Open Source MomentumX demo
+              XR Open Source MomentumX demo
             </a>
           </div>
 
           <div className={styles.section}>
-            <p className={styles['section-label']}>Absolutely inspired by colors of:</p>
+            <p className={styles['section-label']}>ABSOLUTELY INSPIRED BY COLORS OF:</p>
             <img src={Pluribus} width={'100%'} />
           </div>
         </div>
         <figure className={styles['profile-figure']}>
           <img src={AlwinProfile} className={styles['profile-image']} />
           <figcaption className={styles['profile-caption']}>
-            From Flipkart’s FSG UI team outing ~ Phi Phi islands (Thailand)
+            From Flipkart’s FSG UI team outing ~ Krabi (Thailand)
           </figcaption>
         </figure>
       </div>
