@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import style from './Entry.module.css';
-import alwinsdenIcon from '../../public/alwinsden-icon.svg';
+import MainHero from '../pages/mainHero/mainHero';
 
 const navLinks = [
   { label: 'WHO AM I?', href: '/alwin' },
@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'OPEN SOURCE', href: '#products' },
 ];
 
-const Entry = () => {
+const Entry = ({ children }: { children: React.ReactNode }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -59,34 +59,7 @@ const Entry = () => {
         </div>
       )}
 
-      <section className={style.hero}>
-        <div className={style['hero-inner']}>
-          <div className={style['hero-content']}>
-            <h1 className={style['hero-headline']}>
-              <span style={{ whiteSpace: 'nowrap' }}>
-                <span className={style['special-span']}>Better</span> frontend,
-              </span>
-              <br />
-              for the AI age.
-            </h1>
-            <div className={style['hero-subtext']}>
-              <div className={style['hero-explore']}>
-                <p className={style['hero-subtitle']}>
-                  Frontend engineering is rapidly evolving in pace with changing AI frontier. LLMs
-                  have become a daily driver for automating mindless typing, while aiding in
-                  mindfully focusing on the long-term product architecture.
-                </p>
-                <a href="/alwin" className={style['cta-button']}>
-                  Explore my work →
-                </a>
-              </div>
-              <div className={style['hero-icon']}>
-                <img src={alwinsdenIcon} alt="alwinsDen" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className={style['hero-container']}>{children}</div>
 
       <footer className={style.footer}>
         <div className={style['footer-inner']}>

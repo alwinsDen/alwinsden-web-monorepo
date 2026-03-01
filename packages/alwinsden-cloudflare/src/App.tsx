@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Entry from './components/Entry';
+import MainHero from './pages/mainHero/mainHero';
 
 function App() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function App() {
     return () => window.removeEventListener('resize', updateZoom);
   }, []);
 
-  return <Entry />;
+  return <Entry children={<MainHero />} />;
 }
 
 export default App;
